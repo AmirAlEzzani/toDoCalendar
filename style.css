@@ -1,0 +1,20 @@
+* {
+    background-color: red
+}
+
+table {
+    color: blue;
+    background-color: yellow;
+}
+
+td {
+    background-color: white;
+}
+
+td:hover {
+    background-color: red;
+}
+
+td:click {
+    background-color: green;
+}
