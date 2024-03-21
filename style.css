@@ -1,10 +1,10 @@
-* {
-    background-color: red
+body {
+    background-color: lightblue
 }
 
 table {
     color: blue;
-    background-color: yellow;
+    background-color: red;
 }
 
 td {
@@ -15,6 +15,6 @@ td:hover {
     background-color: red;
 }
 
-td:click {
+td:active {
     background-color: green;
 }
