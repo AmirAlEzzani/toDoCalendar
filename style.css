@@ -2,23 +2,6 @@ body {
     background-color: lightblue
 }
 
-table {
-    color: blue;
-    background-color: red;
-}
-
-td {
-    background-color: white;
-}
-
-td:hover {
-    background-color: red;
-}
-
-td:active {
-    background-color: green;
-}
-
 .selected {
     border-color: green;
     background-color: green;
@@ -27,4 +10,10 @@ td:active {
 .today {
     background-color: orange;
     border-color: orange;
+}
+
+.days, .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 32px);
+    gap: 10px;
 }
