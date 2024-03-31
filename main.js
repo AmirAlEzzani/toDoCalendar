@@ -5,7 +5,8 @@ console.log(day[2]);
 let cell = document.querySelectorAll('th')
 
 let createTask = document.createElement('li')
-let node
+let datePicker = document.getElementById('datepicker')
+let datePickerHeader = document.getElementById('datepicker-header')
 
 // on click of each cell, get the corresponding to-do list for that day.
 // need button for create task, remove task, edit task. also need checkbox
