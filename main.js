@@ -32,16 +32,26 @@ next.addEventListener('click', () => {
 
 const displayDates = () => {
     dates.innerHTML = "";
-    const lastOfMonth = new Date(year, month + 1, 0);
-}
+    
+    const lastOfPrevMonth = new Date(year, month, 0);
 
-const createButton = (text, isDisabled, isToday) => {
+    console.log(lastOfPrevMonth);
+
+    const lastOfMonth = new Date(year, month + 1, 0);
+
+    for (let i = 1; i <= lastOfMonth.getDate(); i++) {
+        const button = createButton(i, false, false);
+        dates.appendChild(button);
+    }
+};
+
+const createButton = (text, isDisabled = false, isToday = false) => {
     const button = document.createElement('button');
     button.textContent = text;
     button.disabled = isDisabled;
     button.classList.toggle('today', isToday);
     return button;
-}
+};
 
 displayDates();
 
